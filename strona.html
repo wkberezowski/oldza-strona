@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owocowa kraina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+        color: #913555;
+        margin-left: 30px;
+        margin-right: 30px;
+        background-color: #7cb278;
+      }
+      header {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        font-size: 50px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      nav {
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        background: #bfc27c;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        height: 100%;
+      }
+      a,
+      a:visited {
+        font-size: 17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: #913555;
+      }
+      .game {
+        background: #bfc27c;
+        border-radius: 20px;
+        padding: 20px;
+        width: 40%;
+      }
+      footer {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        border-top: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <header>OWOCOWA KRAINA</header>
+    <div class="container">
+      <nav>
+        <a
+          href="https://www.google.com/url?sa=i&url=https%3A%2F%2Flokalnyrolnik.pl%2Fblog%2Fmaliny-owoce-bliskie-idealu-wartosci-odzywcze-zdrowotne%2F&psig=AOvVaw3TkiiiN-8Y0_LPOZqUeA0V&ust=1648759158642000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNjOu9TY7vYCFQAAAAAdAAAAABAD"
+          >MALINY</a
+        >
+        <a
+          href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ekologia.pl%2Fstyl-zycia%2Fzdrowa-zywnosc%2Ftruskawki-owoce-wlasciwosci-witaminy-i-wartosci-odzywcze-truskawek%2C21571.html&psig=AOvVaw2lDs9XPJhxrSVHZYeDYvgN&ust=1648759195382000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNCOveTY7vYCFQAAAAAdAAAAABAD"
+          >TRUSKAWKI</a
+        >
+        <a
+          href="https://www.google.com/url?sa=i&url=https%3A%2F%2Flekarzebezkolejki.pl%2Fblog%2Fjablka-jako-cenne-zrodlo-witamin%2Fw-1615&psig=AOvVaw34hfYLfPpN0YqsNiJ0qUR_&ust=1648762226466000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCND8tJvk7vYCFQAAAAAdAAAAABAD"
+          >JABŁKA</a
+        >
+        <a
+          href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fakademiasmaku.pl%2Fporada%2Fzjedz-sliwke-jakie-cenne-wlasciwosci-maja-sliwki%2C507&psig=AOvVaw30sAecG-qlxbAKv5dv1xgO&ust=1648759240135000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCICeyvjY7vYCFQAAAAAdAAAAABAD"
+          >ŚLIWKI</a
+        >
+      </nav>
+      <div class="game">
+        <iframe
+          src="https://learningapps.org/watch?app=1151292"
+          style="border: 0px; width: 100%; height: 500px"
+          allowfullscreen="true"
+          webkitallowfullscreen="true"
+          mozallowfullscreen="true"
+        ></iframe>
+      </div>
+      <div class="weather">
+        <script>
+          (function (d, s, id) {
+            if (d.getElementById(id)) {
+              if (window.__TOMORROW__) {
+                window.__TOMORROW__.renderWidget();
+              }
+              return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js';
+
+            fjs.parentNode.insertBefore(js, fjs);
+          })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div
+          class="tomorrow"
+          data-location-id="088604"
+          data-language="PL"
+          data-unit-system="METRIC"
+          data-skin="dark"
+          data-widget-type="aqiMini"
+          style="padding-bottom: 22px; position: relative"
+        >
+          <a
+            href="https://www.tomorrow.io/weather/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+            style="
+              position: absolute;
+              bottom: 0;
+              transform: translateX(-50%);
+              left: 50%;
+            "
+          >
+            <img
+              alt="Powered by Tomorrow.io"
+              src="https://weather-website-client.tomorrow.io/img/powered-by-tomorrow.svg"
+              width="140"
+              height="15"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Olga Berezowska</p>
+      <p>2022</p>
+    </footer>
+  </body>
+</html>
